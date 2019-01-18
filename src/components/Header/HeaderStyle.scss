@@ -1,0 +1,22 @@
+
+.Header {
+  min-height: 10vh;
+  width: 100vw;
+  background-color: #282c34;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  &__Left-Button {
+    color: #FFF;
+    font-size: 1.2em;
+    min-width: 10vw;
+  }
+  &__Title {
+    text-align: center;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+  &__Right-Button {
+    min-width: 10vw;
+  }
+}

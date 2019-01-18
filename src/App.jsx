@@ -11,6 +11,7 @@ import configureStore from './store';
 // import logo from './logo.svg';
 import './App.scss';
 import { HomeContainer } from './container/Home';
+import { DetailsContainer } from './container/Details';
 
 const history = createBrowserHistory();
 const { store, persistor } = configureStore(history);
@@ -23,7 +24,7 @@ export default () => (
         { /* your usual react-router v4 routing */ }
         <Switch>
           <Route exact path="/" component={HomeContainer} />
-          <Route render={() => (<div>Miss</div>)} />
+          <Route exact path="/user/:userId" component={DetailsContainer} />
         </Switch>
       </ConnectedRouter>
     </PersistGate>

@@ -1,0 +1,28 @@
+.Details {
+  display: flex;
+  flex-direction: column;
+  &__Panel {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 15px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  &__Img {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  &__Info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+    h4 {
+      margin: 5px 0px;
+    }
+  }
+
+}
